@@ -2,7 +2,6 @@ package com.auchan.startblock.service.impl;
 
 import com.auchan.startblock.model.ActionFlag;
 import com.auchan.startblock.repository.ActionFlagRepository;
-import com.auchan.startblock.repository.UserRepository;
 import com.auchan.startblock.service.ActionFlagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

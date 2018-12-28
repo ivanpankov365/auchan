@@ -10,23 +10,23 @@ import java.util.List;
 @Repository
 public interface ActionFlagRepository extends JpaRepository<ActionFlag, Integer> {
 
-    @Query(value = "SELECT * from pushs",
+    @Query(value = "SELECT * from actionflag",
             nativeQuery = true)
     List<ActionFlag> select();
 
-    @Query(value = "UPDATE pushs SET flag = true WHERE name = 'go'",
+    @Query(value = "UPDATE actionflag SET flag = true WHERE name = 'go'",
             nativeQuery = true)
     void setGoTRUE();
 
-    @Query(value = "UPDATE pushs SET flag = false WHERE name = 'go'",
+    @Query(value = "UPDATE actionflag SET flag = false WHERE name = 'go'",
             nativeQuery = true)
     void setGoFALSE();
 
-    @Query(value = "UPDATE pushs SET flag = true WHERE name = 'in'",
+    @Query(value = "UPDATE actionflag SET flag = true WHERE name = 'in'",
             nativeQuery = true)
     void setInTRUE();
 
-    @Query(value = "UPDATE pushs SET flag = false WHERE name = 'in'",
+    @Query(value = "UPDATE actionflag SET flag = false WHERE name = 'in'",
             nativeQuery = true)
     void setInFALSE();
 }

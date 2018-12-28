@@ -3,7 +3,7 @@ package com.auchan.startblock.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "pushs")
+@Table(name = "actionflag")
 public class ActionFlag {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

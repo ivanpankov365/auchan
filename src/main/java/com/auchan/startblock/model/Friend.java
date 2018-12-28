@@ -3,8 +3,8 @@ package com.auchan.startblock.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "auchanusers")
-public class User {
+@Table(name = "auchanfriends")
+public class Friend {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
